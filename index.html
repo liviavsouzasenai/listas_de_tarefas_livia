@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Minha Agenda</h1>
+
+    <script>
+        let string = ["Minha Agenda"];
+        console.log (`{$string}`);
+        let numTarefa = ["8hr-acorda","9hr-tomar café","10hr-dever de casa","11hr-fazer almoço","12hr-almoçar","13hr-violino","14hr-sair com as amigas"];
+
+        console.log(`${numTarefa[0]}`);
+        console.log(`${numTarefa[1]}`);
+        console.log(`${numTarefa[2]}`);
+        console.log(`${numTarefa[3]}`);
+        console.log(`${numTarefa[4]}`);
+        console.log(`${numTarefa[5]}`);
+        console.log(`${numTarefa[6]}`);
+
+        numTarefa.length;
+        console.log(`você tem ${numTarefa.length} tarefas pendentes`);
+
+
+        numTarefa.push();
+        console.log(numTarefa);
+
+        numTarefa.shift()
+        console.log(`Minha primeira tarefa concluida ${numTarefa[0]}`);
+
+        numTarefa.pop(numTarefa[6]);
+        console.log(`ultima tarefa removida ${numTarefa}`);
+       
+        numTarefa.sort()
+        console.log(`Minhas tarefas em ordem ${numTarefa}`);
+
+
+
+    </script>
+</body>
+</html>
