@@ -10,7 +10,7 @@
 
     <script>
         let string = ["Minha Agenda"];
-        console.log (`{$string}`);
+        console.log (`${string}`);
         let numTarefa = ["8hr-acorda","9hr-tomar café","10hr-dever de casa","11hr-fazer almoço","12hr-almoçar","13hr-violino","14hr-sair com as amigas"];
 
         console.log(`${numTarefa[0]}`);
@@ -24,18 +24,22 @@
         numTarefa.length;
         console.log(`você tem ${numTarefa.length} tarefas pendentes`);
 
-
+        let novatarefa = `15hr- dar banho no cachorro`;
         numTarefa.push();
-        console.log(numTarefa);
+        console.log(`Preciso adicionar mais uma tarefa: ${novatarefa}`);
+
+        numTarefa.sort()
+        console.log(`Minhas tarefas em ordem: ${numTarefa}`);
 
         numTarefa.shift()
-        console.log(`Minha primeira tarefa concluida ${numTarefa[0]}`);
+        console.log(`Minha primeira tarefa concluida: ${numTarefa[0]}`);
 
         numTarefa.pop(numTarefa[6]);
-        console.log(`ultima tarefa removida ${numTarefa}`);
-       
-        numTarefa.sort()
-        console.log(`Minhas tarefas em ordem ${numTarefa}`);
+        console.log(`ultima tarefa removida: ${numTarefa}`);
+
+        let tarefameio = `11hr-fazer almoço`;
+        numTarefa.pop();
+        console.log(`uma tarefa foi removida: ${tarefameio}`);        
 
 
 
